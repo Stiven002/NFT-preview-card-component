@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 96vh;
+}
+
+.container{
+    width: 350px;
+    padding: 1% 1%;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+
+.img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} 
+
+.cortina{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%);
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.img:hover .cortina{
+    opacity: .5;
+    transition: all .3s;
+}
+
+.img:hover #ojo{
+    opacity: 1;
+    transition: all .3s;
+}
+
+#ojo{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    opacity: 0;
+    z-index: 9999;
+}
+
+.img img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.text{
+    color: hsl(215, 51%, 70%);
+    margin-top: 8%;
+}
+
+.text h3{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 5%;
+}
+
+.text h3:hover{
+    color: hsl(178, 100%, 50%);
+    transition: all .3s;
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.eth{
+    display: flex;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+}
+
+.eth p{
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.time_days{
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+}
+
+.time_days p{
+    margin-left: 10px;
+}
+
+#partidura{
+    padding: 0.3px;
+    background-color: hsl(215, 51%, 70%);
+    border: none;
+    opacity: .3;
+    margin-top: 5%;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+    text-decoration: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.avatar a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.avatar a:hover{
+    color: hsl(178, 100%, 50%);
+    transition: all .3s;
+}
+
+.avatar img{
+    width: 45px;
+    height: 45px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 5%;
+}
+
+
+.attribution { font-size: 11px; text-align: center; color: hsl(215, 51%, 70%)}
+.attribution a { color: white; text-decoration: none; }
+.attribution a:hover{ color: hsl(178, 100%, 50%); transition: .3s; }
+
+@media screen and (max-width: 1000px){
+    .container{
+        padding: 2% 2%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container{
+        padding: 2% 2%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .container{
+        padding: 4% 4%;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .container{
+        width: 250px;
+        padding: 4% 4%;
+    }
+
+    .text h3{
+        font-size: 15px;
+    }
+
+    .text p{
+        font-size: 10px;
+    }
+
+    .eth p{
+        font-size: 15px;
+    }
+
+    .avatar p{
+        font-size: 12px;
+    }
+
+    .avatar a{
+        font-size: 12px;
+    }
+}
